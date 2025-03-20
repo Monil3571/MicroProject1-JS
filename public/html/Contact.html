@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" style="scrollbar-width: none;">
+  <head>
+    <meta name="author" content="Ferry Porsche">
+    <meta name="keywords" content="contact, mail porsche, connect with porsche">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Contact Porsche to make a purchase or for any queries">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/Images/porsche_new_logo.png">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/mediaqueries.css" />
+    <title>Porsche</title>
+  </head>
+  <body class="contact-page">
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo"><img src="../assets/Images/Porsche-logo.png" alt="" srcset=""><a href="../index.html"></a></div>
+        <div>
+          <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+            <li><a href="./Models.html">Models</a></li>
+            <li><a href="./Experience.html">Experience</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo"><img src="../assets/Images/Porsche-logo.png" alt="" srcset=""></div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links contact-menu">
+            <li><a href="../index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="./Models.html" onclick="toggleMenu()">Models</a></li>
+            <li><a href="./Experience.html" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="./Contact.html" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form-container">
+        <h2> Subscribe to our newsletter!! </h2>
+        <form id="contactForm" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Contact No:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

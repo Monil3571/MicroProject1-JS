@@ -1,0 +1,51 @@
+[
+    {
+      "name": "718 Cayman GTS 4.0",
+      "price": "$112,042",
+      "power": "394 hp",
+      "acceleration": "4.5 s",
+      "top_speed": "291 km/h",
+      "image": "../assets/Images/718-Cayman-GTS-4.0.webp"
+    },
+    {
+      "name": "911 Carrera Cabriolet",
+      "price": "$161,242",
+      "power": "379 hp",
+      "acceleration": "3.4 s",
+      "top_speed": "291 km/h",
+      "image": "../assets/Images/911-Caerra-Cabriolet.webp"
+    },
+    {
+      "name": "911 Carrera GTS",
+      "price": "$188,122",
+      "power": "300 hp",
+      "acceleration": "3.4 s",
+      "top_speed": "311 km/h",
+      "image": "../assets/Images/911-Carrera-GTS.webp"
+    },
+    {
+      "name": "718 Boxster",
+      "price": "$81,935",
+      "power": "300 hp",
+      "acceleration": "5.1 s",
+      "top_speed": "275 km/h",
+      "image": "../assets/Images/718-boxster.webp"
+    },
+    {
+      "name": "718 Cayman GT4 RS",
+      "price": "$213,442",
+      "power": "493 hp",
+      "acceleration": "3.4 s",
+      "top_speed": "314 km/h",
+      "image": "../assets/Images/718-Cayman-GT4-RS.webp"
+    },
+    {
+      "name": "718 Spyder RS",
+      "price": "$213,442",
+      "power": "493 hp",
+      "acceleration": "3.4 s",
+      "top_speed": "308 km/h",
+      "image": "../assets/Images/718-Spyder-RS.webp"
+    }
+  ]
+  

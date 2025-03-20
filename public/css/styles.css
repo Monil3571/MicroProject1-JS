@@ -1,0 +1,600 @@
+@font-face {
+  font-family: main-font;
+  src: url('../assets/fonts/911-porscha/911v2.ttf');
+}
+@font-face {
+  font-family: ff-din;
+  src: url('../assets/fonts/Din-Font/DIN.ttf')
+}
+@font-face {
+  font-family: large-heading;
+  src: url('../assets/fonts/BebasNeue-font/BebasNeue/BebasNeue-Bold.ttf')
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+  .experience-page{
+  background-image: url('../assets/Images/porsche-normal.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed; 
+} 
+.models-page{
+  /* background: linear-gradient(to bottom, #000000, #434343); */
+  
+  background-image: url('../assets/Images/logo-dark-rain.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed; 
+    background-attachment: fixed; 
+}
+.contact-page{
+  background-image: url('../assets/Images/contact-image.jpg');
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+a,.btn{
+  transition: all 300ms ease;
+}
+
+  nav,.nav-links{
+    display: flex;
+  }
+  
+  nav{
+    justify-content: space-around;
+    background-color: rgba(165, 149, 149, 0.1);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    height: 17vh;
+    font-family: 'lato', sans-serif;
+  }
+  
+  .nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  
+  a{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+    font-weight: 525;
+  }
+  
+  a:hover{
+    color: #7B9FC0;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: #7B9FC0;
+    
+  }
+  
+  .logo{
+    font-size: 2rem;
+  }
+  .logo>img{
+    width: 5em;
+  }
+  .logo:hover{
+    cursor: default;
+  }
+  
+  
+  #hamburger-nav{
+    display: none;
+  }
+  
+  .hamburger-menu{
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: rgb(51, 50, 50);
+    backdrop-filter: blur(2px);
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    /* color: black; */
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links li{
+    list-style: none;
+  }
+  
+  .menu-links.open{
+    max-height: 300px;
+  }
+  
+  .hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px,5px);    
+  }
+  .hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px,-5px);
+  }
+  
+  .hamburger-icon span:first-child {
+    transform: none;
+  }
+  
+  .hamburger-icon span:nth-child(2){
+    opacity: 1;
+  }
+  
+  .hamburger-icon span:last-child{
+    transform: none;
+  }
+  
+  /* The below section is for the home page */
+
+  .home-container{
+    background-image: url('../assets/Images/grey-porsche-rear.jpg');
+    background-size:cover;
+    height: 90vh;
+  }
+  .home-heading{
+    font-size: 4em;
+  }
+
+
+/* The below section is for the home page */
+
+header {
+   position: relative;/* Ensure header appears above other content */
+  z-index: 2; /* Set z-index higher than the video */
+}
+
+.bgvideo {
+  position: fixed; /* Ensure video covers entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+.home-body{
+  /* background-color: white; */
+}
+.home-video{
+  height: 90vh;
+}
+
+.video-link{
+   position: absolute;
+   bottom: 13vh;
+   left: 6vw;
+   background-color:#ef1616;
+   color: white;
+   padding: 0.6em 1.2em;
+   border-radius: 10px;
+   font-family: large-heading;
+   font-size: 1.5em;
+   letter-spacing: 0.05em;
+  }
+  
+  .video-link:hover{
+    background-color: #d7d5d1;
+    text-decoration: none;
+    /* color: white; */
+    color: black;
+  }
+  
+  .info-direct{
+    display: flex; 
+    /* backdrop-filter: blur(5px);  */
+    background-color: white;
+    padding: 5vh 5vw ;
+    padding-top: 10vh;
+    gap: 7vw;
+    align-items: flex-start;
+  }
+  .info-direct img{
+    width: 40vw;
+  }
+  .about-text{
+    /* padding: 1em; */
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .alt-info{
+    /* align-items: flex-end; */
+  }
+  .about-text h1{
+    font-family: large-heading;
+    font-size: 4em;
+  }
+  .home-link{
+
+    font-family: large-heading;
+    font-size: 1.2em;
+    font-weight: 550;
+    background-color: black;
+    width: fit-content;
+    /* color: black; */
+    /* margin: 2em; */
+    padding: 0.7em 1.2em;
+    border-radius: 10px;
+}
+
+ .home-link:hover{
+  color: black;
+  text-decoration: none;
+  background-color: rgb(185, 180, 180);
+ }
+
+
+
+
+
+
+  
+  /* The below section is for The Experience page: */
+
+  .exp-top-banner{
+  height: 90vh;
+  }
+
+  .exp-top-banner p{
+    position: absolute;
+    color: white;
+    bottom: 4vw;
+    left: 4vw;
+    font-size: 5em;
+    font-family: large-heading;
+  }
+  .exp-main-container{
+    background-color: white;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10vh;
+  }
+  
+  .exp-heading{
+    text-align: center;
+    font-family: large-heading;
+    /* font-size: 4em; */
+
+  }
+   .motorsports-container{
+    display: flex; 
+    backdrop-filter: blur(5px); 
+    padding: 5vh 0 ;
+    padding-top: 10vh;
+    gap: 7vw;
+    align-items: flex-start;
+  }
+  .history-container{
+    margin: 0 10vw;
+    display: flex;
+    align-items: center;
+  }
+  
+  .motorsports-container img{
+    width: 40vw;
+  }
+  .history-img{
+    height: 60vh;
+  }
+  .motorsports-text-container h1{
+    font-size: 1.7em;
+    padding: 2vh 0;
+    text-wrap: balance;
+  }
+  .motorsports-text-container p{
+    font-size: 1.2em;
+  }
+  .history-container h1{
+    font-size: 2.2em;
+    /* background-color: yellow; */
+  }
+
+  .motorsports-heading{
+    /* background-color: #A43131; */
+    font-size: 4em;
+  }
+
+
+
+
+
+
+
+
+
+  /* The below section is for models page */
+
+  
+ #loadModels {
+  font-family: ff-din;
+  font-weight: 900;
+  font-size: 1.3em;
+  width: 25%;
+  padding: 0.5em 0.3em;
+  margin: 1em 3em;
+  background-color: rgb(187 114 115/80%);
+  backdrop-filter: blur(2px);
+  border: none;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  .models{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #modelsContainer{
+    /* background-color: #A43131; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 3vw;
+    flex-wrap: wrap;
+    margin: 5vw;
+    z-index: 1;
+  }
+  
+
+  .model-card {
+    /* max-width: 30vw; */
+    width: 30vw;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: #f7e4e3;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .model-card:hover {
+    transform: translateY(-20px);
+  }
+  
+  .model-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .model-specs {
+    padding: 15px;
+  }
+  
+  .model-name {
+    font-size: 1.4rem;
+    font-family: main-font;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+  }
+  
+  .model-price {
+    font-size: 1rem;
+    color: #C29049;
+  }
+  
+  .spec-item {
+    margin-top: 10px;
+  }
+  
+  .spec-label {
+    font-weight: bold;
+  }
+  
+  .spec-value {
+    margin-left: 5px;
+  }
+  
+  
+  /* The below section is for the contact page */
+  
+  .form-container {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(169 124 81 /30%);
+    backdrop-filter: blur(2px);
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 2em 2em;
+    font-size: 1.2em;
+    color: aliceblue;
+    border-radius: 15px;
+    font-family: ff-din;
+    font-weight: 750;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+   
+  }
+  
+  label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+  padding: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: 1.05em;
+  background-color: rgb(187 149 114 /80%);
+  backdrop-filter: blur(2px);
+}
+
+button[type="submit"] {
+  font-family: ff-din;
+  font-weight: 900;
+  font-size: 1.3em;
+  width: 50%;
+  padding: 0.5em 0.3em;
+  margin: 1em 3em;
+  background-color: rgb(187 114 115/80%);
+  backdrop-filter: blur(2px);
+  border: none;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+ background-color:rgba(227, 155, 61, 0.744);
+}
+
+
+
+.quote{
+  /* padding: 0 auto; */
+  /* margin: auto 0; */
+
+  height: 15vh;
+  font-family: large-heading;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+}
+
+.quote p{
+  /* margin: 5vh; */
+  /* padding: 10vh [20vh; */
+  position: relative;
+  /* padding: 0 auto; */
+  text-align: center;
+  /* justify-content: center; */
+  top: 30%;
+}
+
+
+/* The below section is for the footers */
+
+footer{
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  font-family: ff-din;
+  font-size: 1.2em;
+  padding: 1em 1em;
+  z-index: 1;
+}
+
+footer ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  gap: 0.4em;
+}
+
+footer ul li{
+  display: flex;
+  align-items: center;
+}
+footer a{
+  color: black;
+}
+footer a:hover{
+  text-decoration: none;
+  color: #ccc;
+}
+.socials-list p{
+  font-weight: 700;
+  font-size: 1.4em;
+}
+.socials-images{
+  width:2em;
+}
+.footer-logo>img{
+  height: 4em;
+}
+.footer-cta{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer h2{
+  margin: 0;
+  
+}
+
+footer button[type="submit"] {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+footer input[type="text"],
+footer input[type="email"]{
+  background-color: #A43131;
+  color: white;
+}
+footer button[type="submit"]:hover{
+  background-color: grey;
+  color: black;
+}
+

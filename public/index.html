@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Ferry Porsche">
+    <meta name="keywords" content="Home porsche, discover porsche">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="This is the home page for Porsche.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/Images/porsche_new_logo.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
+    <title>Porsche</title>
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">
+          <img src="./assets/Images/Porsche-logo.png" alt="" srcset="" /><a
+            href="index.html"
+          ></a>
+        </div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./html/Models.html">Models</a></li>
+            <li><a href="./html/Experience.html">Experience</a></li>
+            <li><a href="./html/Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav id="hamburger-nav">
+        <div class="logo">
+          <img src="./assets/Images/Porsche-logo.png" alt="" srcset="" />
+        </div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+            <li>
+              <a href="./html/Models.html" onclick="toggleMenu()">Models</a>
+            </li>
+            <li>
+              <a href="./html/Experience.html" onclick="toggleMenu()"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a href="./html/Contact.html" onclick="toggleMenu()">Contact</a>
+            </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="home-body">
+      <section class="home-video">
+        <video autoplay loop muted plays-inline class="bgvideo">
+          <source src="./assets/home-page-video.mp4" type="video/mp4" />
+        </video>
+        <a href="./html/Models.html" class="video-link"> See Our Models</a>
+      </section>
+
+      <section class="info-direct">
+        <img src="./assets/Images/home-link-img.jpg" alt="" />
+        <div class="about-text">
+          <h1>Why Porsche?</h1>
+          <p>
+            People often choose Porsche over other cars because of its
+            reputation for high performance, precision engineering, and timeless
+            design. Porsche vehicles offer exhilarating driving experiences,
+            advanced technology, and a strong heritage in motorsport.
+            Additionally, Porsche has a strong brand image associated with
+            luxury, status, and exclusivity, making it a desirable choice for
+            many car enthusiasts.
+          </p>
+          <a class="home-link" href="./html/Experience.html"> Learn more </a>
+        </div>
+      </section>
+
+      <section class="info-direct alt-direct">
+        <div class="about-text alt-info">
+          <h1>Origin</h1>
+          <p>
+            The Porsche tanks, developed by Ferdinand Porsche's firm during
+            World War II, were experimental heavy tanks intended for the German
+            army. Notably, the most famous among them was the Tiger I tank,
+            renowned for its powerful armament and thick armor. Porsche's
+            designs aimed for innovative features like gasoline-electric hybrid
+            engines and complex suspension systems, but they faced numerous
+            technical challenges and were ultimately deemed impractical for mass
+            production. Production contracts were awarded to Henschel & Son,
+            leading to the production of the more successful Tiger I variant.
+            Despite Porsche's pioneering engineering efforts, his tanks faced
+            reliability issues and were relatively rare on the battlefield
+            compared to other German tank models.
+          </p>
+          <a class="home-link" href="./html/Experience.html"> Learn more </a>
+        </div>
+        <img src="./assets/Images/porsche-tank.jpg" alt="" />
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo">
+        <img src="./assets/Images/Logo-no-text.png" alt="" srcset="" />
+      </div>
+      <ul class="socials-list">
+        <p>Socials</p>
+        <li>
+          <img
+            src="./assets/Images/Insta-logo.png"
+            alt=""
+            class="socials-images"
+          /><a href="https://www.instagram.com/porsche/">Instagram</a>
+        </li>
+        <li>
+          <img
+            src="./assets/Images/twitter-logo.png"
+            alt=""
+            class="socials-images"
+          /><a href="https://twitter.com/Porsche">Twitter</a>
+        </li>
+        <li>
+          <img
+            src="./assets/Images/linkedin-logo.png"
+            alt=""
+            class="socials-images"
+          /><a href="https://www.linkedin.com/company/porsche-ag/">LinkedIn</a>
+        </li>
+      </ul>
+
+      <div>
+        <ul class="footer-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./html/Models.html">Models</a></li>
+          <li><a href="./html/Experience.html">Experience</a></li>
+          <li><a href="./html/Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <section class="footer-cta">
+        <h2>Subscribe to our newsletter!!</h2>
+        <form id="ctaForm" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <p>Copyright &#169; 2024 Porsche. All Rights Reserved</p>
+    </footer>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

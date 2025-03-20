@@ -1,0 +1,106 @@
+@media screen and (max-width: 1200px){
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    .form-container{
+        backdrop-filter: none;
+    }
+    .logo>img{
+        width: 3em;
+    }
+    footer{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .footer-cta{
+        display: none;
+    }
+    .socials-list p{
+        /* flex-grow: 1; */
+        /* flex: 1; */
+        font-size: 1.5em;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: row;
+        /* list-style: none; */
+        /* align-items: center; */
+        justify-content: center;
+        gap: 0.4em;
+        flex-wrap: wrap;
+      }
+
+      .experience-page{
+        background-image: url(../assets/Images/porsche-white-mountain.jpg);
+        background-size: cover;
+        /* background-position: center;  */
+        background-position: 60% 50%;
+        background-attachment: fixed; 
+      } 
+    .exp-top-banner {
+        height: 60vh;
+    }
+    .exp-top-banner p{
+        color: white;
+        font-size: 3.5em;
+        position: absolute;
+        bottom: 30vh;
+        left: 5vw;
+        /* height: 40vh; */
+    }
+    .motorsports-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        /* flex-wrap: wrap; */
+    }
+    .alt{
+        flex-direction: column-reverse;
+    }
+    .motorsports-container img{
+        width: 70vw;
+    }
+    .motorsports-container h1{
+        text-align: center;
+    }
+    .exp-heading{
+        font-size: 2em;
+    }
+    .history-img{
+        height: 50vh;
+    }
+
+    .quote{
+        height: fit-content;
+        /* margin: 0 ; */
+        /* padding: 0 5vh; */
+        font-size: 1.3em;
+    }
+    .quote p{
+        padding: 5vh 0;
+    }
+    .info-direct {
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .info-direct img{
+        min-width: 60vw;
+    }
+    .alt-direct{
+        flex-direction: column-reverse;
+    }
+    .alt-info,.about-text{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .model-card{
+        /* max-width: none; */
+        min-width: 70vw;
+    }
+}
